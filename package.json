@@ -1,0 +1,16 @@
+{
+  "name": "gchat",
+  "version": "1.0.0",
+  "description": "** Galooeh Chat **",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Luca Chackalackal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "path": "^0.12.7"
+  }
+}
