@@ -4,27 +4,36 @@
 		<title>Galooeh Chat</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="stylesheets/style.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
 	</head>
 	<body>
 		<div id="main">
 			<div id="chats">
-				<p>Logo
-				<p>Chat1
-				<p>Chat2
+				<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 495"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Logo"><path class="cls-1" d="M0,137H50.47a118.29,118.29,0,0,0-9,30H0Z"/><path class="cls-1" d="M320,137v30H278.49a118.29,118.29,0,0,0-9-30Z"/><path class="cls-1" d="M160,0A70.08,70.08,0,0,0,90,70a69.36,69.36,0,0,0,2.12,17.1,119.24,119.24,0,0,1,28-14.27C120,71.9,120,71,120,70a40,40,0,0,1,80,0c0,1,0,1.9-.1,2.83a119.24,119.24,0,0,1,28,14.27A69.36,69.36,0,0,0,230,70,70.08,70.08,0,0,0,160,0Z"/><path class="cls-1" d="M160,81A105,105,0,0,0,62.67,225.35,159.39,159.39,0,0,1,88.6,209a75,75,0,1,1,142.8,0,159.39,159.39,0,0,1,25.93,16.4A105,105,0,0,0,160,81Z"/><path class="cls-1" d="M160,495C80.6,495,16,430.4,16,351S80.6,207,160,207s144,64.6,144,144S239.4,495,160,495Zm0-258A114,114,0,1,0,274,351,114.13,114.13,0,0,0,160,237Z"/></g></g></svg>
+
+			</div>
+
+			<div id="chatname">
+				<p>chat name</p>
 			</div>
 
 			<div id="messages">
-				<p>Messages
 			</div>
 
 			<div id="text">
-				<p>imma send this message
+				<input type="text" placeholder="type message here" autofocus/>
 			</div>
 
 			<div id="users">
-				<p>user1
-				<p>user2
+
+
 			</div>
 		</div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="javascript/message.js"></script>
 	</body>
 </html>

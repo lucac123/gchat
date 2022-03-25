@@ -1,34 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
-	margin: 0;
-	height: 100%:
+  margin: 0;
+  height: 100%;
+  background-color: #091e28;
+  font-family: "Inter", sans-serif;
+  color: #e5e5e5;
+}
+
+p {
+  margin: 0;
 }
 
 #main {
-	display: grid;
-	height: 100%;
-	grid-template-columns: 100px 1fr 300px;
-	grid-template-rows: 1fr 100px;
-	grid-template-areas:
-		"chats messages users"
-		"chats text users";
+  display: grid;
+  height: 100%;
+  grid-template-columns: 100px minmax(200px, 1fr) 300px;
+  grid-template-rows: 50px 1fr 100px;
+  grid-template-areas:
+    "chats chatname users"
+    "chats messages users"
+    "chats text users";
 }
 
 #chats {
-	background-color: teal;
-	grid-area: chats;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: chats;
+}
+
+#chatname {
+  display: flex;
+  grid-area: chatname;
+  align-items: center;
+  justify-content: center;
+  font-size: 15pt;
 }
 
 #messages {
-	background-color: blue;
-	grid-area: messages;
+  grid-area: messages;
+  background-color: #103444;
+  border-radius: 20px;
 }
 
 #text {
-	background-color: red;
-	grid-area: text;
+  display: flex;
+  grid-area: text;
+  align-items: center;
+}
+#text input {
+  width: 100%;
+  height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  background-color: #103444;
+  font-family: inherit;
+  color: inherit;
+  font-size: 12pt;
+  text-align: right;
+  padding: 20px;
+}
+#text input:focus {
+  outline: none;
 }
 
 #users {
-	background-color: green;
-	grid-area: users;
+  grid-area: users;
+}
+
+#logo {
+  height: 100px;
+}
+#logo path {
+  fill: #80a4b4;
 }
